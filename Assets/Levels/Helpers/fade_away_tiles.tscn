@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://djimqhrkbb6rm"]
+
+[ext_resource type="TileSet" uid="uid://e4g8t2veu7ja" path="res://Assets/Levels/TileSets/Dungeon.tres" id="1_xnfej"]
+[ext_resource type="Script" path="res://Assets/Levels/Helpers/FadeAwayTiles.gd" id="2_wku37"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s8r1h"]
+size = Vector2(112, 48)
+
+[node name="FadeAwayTiles" type="TileMap"]
+tile_set = ExtResource("1_xnfej")
+format = 2
+layer_0/z_index = 4
+layer_0/tile_data = PackedInt32Array(-131077, 65539, 3, -65541, 65539, 3, -5, 65539, 4, -131076, 131075, 3, -65540, 65539, 3, -4, 65539, 4, -131075, 196611, 3, -65539, 131075, 3, -3, 131075, 4, -131074, 196611, 3, -65538, 196611, 3, -2, 196611, 4, -131073, 262147, 3, -65537, 262147, 4)
+layer_1/z_index = 5
+layer_1/tile_data = PackedInt32Array(-131076, 786435, 3, -65540, 786435, 4, -4, 786435, 5, -131075, 851971, 3, -65539, 851971, 4, -3, 851971, 5)
+script = ExtResource("2_wku37")
+
+[node name="Area" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="Collider" type="CollisionShape2D" parent="Area"]
+position = Vector2(-40, -24)
+shape = SubResource("RectangleShape2D_s8r1h")

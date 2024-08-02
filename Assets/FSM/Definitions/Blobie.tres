@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="FSMDefinitionResource" load_steps=2 format=3 uid="uid://c7ihdl8o2ed7j"]
+
+[ext_resource type="Script" path="res://Data/Resources/FSMDefinitionResource.gd" id="1_ao01e"]
+
+[resource]
+script = ExtResource("1_ao01e")
+FSMName = "Blobie"
+InitState = "Idle"

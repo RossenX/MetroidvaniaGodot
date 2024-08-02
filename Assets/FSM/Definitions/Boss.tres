@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="FSMDefinitionResource" load_steps=2 format=3 uid="uid://c6hgjn2ufbeq2"]
+
+[ext_resource type="Script" path="res://Data/Resources/FSMDefinitionResource.gd" id="1_4odf2"]
+
+[resource]
+script = ExtResource("1_4odf2")
+FSMName = "Boss"
+InitState = "Phase1_Idle"

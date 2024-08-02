@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dycwbeqd3k8yi"]
+
+[ext_resource type="Texture2D" uid="uid://dtyg2n35ha1t1" path="res://Assets/UI/Heart.tres" id="1_vfhbw"]
+
+[node name="Heart" type="Sprite2D"]
+position = Vector2(0, 540)
+texture = ExtResource("1_vfhbw")
+centered = false
+offset = Vector2(0, -16)
+flip_h = true
+hframes = 3

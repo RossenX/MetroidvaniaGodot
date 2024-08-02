@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CharacterDefinitionResource" load_steps=2 format=3 uid="uid://dlq30xfirsjpf"]
+
+[ext_resource type="Script" path="res://Data/Resources/CharacterDefinitionResource.gd" id="1_jsgba"]
+
+[resource]
+script = ExtResource("1_jsgba")
+CharacterName = &"Undead"
+Height = 28.0
+FSMName = "Skeleton"
+Defaults = {
+"Life": 3,
+"MaxLife": 3,
+"WalkSpeed": 50
+}
+ArtOffset = Vector2(0, 0)
+ArtScale = 1.0
+CollisionLayer = 4
+Tags = Array[StringName]([])
+DefaultController = "AIController"

@@ -1,0 +1,37 @@
+[gd_scene load_steps=8 format=3 uid="uid://biexrmsodr6eu"]
+
+[ext_resource type="Texture2D" uid="uid://527nqi01fot1" path="res://Assets/Art/SFX/Fireball/FB001.png" id="1_q6tje"]
+[ext_resource type="Texture2D" uid="uid://csiro2ab4iys6" path="res://Assets/Art/SFX/Fireball/FB002.png" id="2_07bsh"]
+[ext_resource type="Texture2D" uid="uid://wd144uec7dhe" path="res://Assets/Art/SFX/Fireball/FB003.png" id="3_oc31o"]
+[ext_resource type="Texture2D" uid="uid://cmgutnl5ywh0o" path="res://Assets/Art/SFX/Fireball/FB004.png" id="4_vc854"]
+[ext_resource type="Texture2D" uid="uid://wopm7uwja16l" path="res://Assets/Art/SFX/Fireball/FB005.png" id="5_26y48"]
+[ext_resource type="Script" path="res://Assets/Projectiles/Fireball.gd" id="6_j1hij"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3gqj3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_q6tje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_07bsh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_oc31o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vc854")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_26y48")
+}],
+"loop": true,
+"name": &"Fireball",
+"speed": 5.0
+}]
+
+[node name="Fireball" type="AnimatedSprite2D"]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_3gqj3")
+animation = &"Fireball"
+script = ExtResource("6_j1hij")

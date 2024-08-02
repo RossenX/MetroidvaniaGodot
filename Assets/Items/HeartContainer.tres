@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=3 format=3 uid="uid://ca45yn6re6hyy"]
+
+[ext_resource type="Script" path="res://Data/Resources/ItemResource.gd" id="1_6p3y4"]
+[ext_resource type="Texture2D" uid="uid://cqr1gi37nxyat" path="res://Assets/Items/Icons/heart.tres" id="1_jg5kn"]
+
+[resource]
+script = ExtResource("1_6p3y4")
+ItemImage = ExtResource("1_jg5kn")
+affectedVars = Array[String](["MaxLife", "Life"])
+affectedVarsAmount = Array[int]([1, 1])

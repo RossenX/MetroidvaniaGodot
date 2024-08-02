@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1lo3akmvcooh"]
+
+[ext_resource type="Script" path="res://Assets/Levels/Helpers/PlayArea.gd" id="1_wmxsn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cv4f6"]
+size = Vector2(656, 512)
+
+[node name="PlayArea" type="Area2D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_wmxsn")
+
+[node name="Bounds" type="CollisionShape2D" parent="."]
+z_index = 100
+z_as_relative = false
+position = Vector2(1336, -256)
+shape = SubResource("RectangleShape2D_cv4f6")

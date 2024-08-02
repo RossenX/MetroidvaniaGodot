@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://be33jyxvp3asp"]
+
+[ext_resource type="Script" path="res://Data/Character.gd" id="1_vybsd"]
+[ext_resource type="SpriteFrames" uid="uid://58byggns513u" path="res://Assets/Animations/Blobie.tres" id="2_ida60"]
+
+[node name="Character Dummy" type="CharacterBody2D"]
+script = ExtResource("1_vybsd")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -44)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("2_ida60")
+animation = &"Slide"

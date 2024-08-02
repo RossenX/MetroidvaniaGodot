@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5swsp3usrxmg"]
+
+[ext_resource type="Script" path="res://Blobie.gd" id="1_oajkq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ms80"]
+size = Vector2(3158, 20)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ewadd"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RigidBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(273, 39)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(-64, 925)
+shape = SubResource("RectangleShape2D_8ms80")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(-1596, -628)
+rotation = 1.59143
+shape = SubResource("RectangleShape2D_8ms80")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(13.0001, -2123)
+rotation = -3.10032
+shape = SubResource("RectangleShape2D_8ms80")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(1513, -547)
+rotation = 1.5877
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_8ms80")
+
+[node name="RigidBody2D2" type="RigidBody2D" parent="."]
+gravity_scale = 2.0
+continuous_cd = 1
+script = ExtResource("1_oajkq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D2"]
+shape = SubResource("CircleShape2D_ewadd")
+
+[node name="Camera2D" type="Camera2D" parent="RigidBody2D2"]
+ignore_rotation = false
+zoom = Vector2(0.5, 0.5)
+rotation_smoothing_enabled = true
+rotation_smoothing_speed = 1.0

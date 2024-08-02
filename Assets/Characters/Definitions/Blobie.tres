@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CharacterDefinitionResource" load_steps=2 format=3 uid="uid://dchgnl1hifrlg"]
+
+[ext_resource type="Script" path="res://Data/Resources/CharacterDefinitionResource.gd" id="1_2b55q"]
+
+[resource]
+script = ExtResource("1_2b55q")
+CharacterName = &"Blobie"
+Height = 30.0
+FSMName = "Blobie"
+Defaults = {
+"Life": 3,
+"MaxLife": 3
+}
+ArtOffset = Vector2(3, -6)
+ArtScale = 0.95
+CollisionLayer = 2
+Tags = Array[StringName]([])
+DefaultController = "Player"

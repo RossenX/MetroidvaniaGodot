@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CharacterDefinitionResource" load_steps=2 format=3 uid="uid://bv5jyyhuvd54i"]
+
+[ext_resource type="Script" path="res://Data/Resources/CharacterDefinitionResource.gd" id="1_nk00l"]
+
+[resource]
+script = ExtResource("1_nk00l")
+CharacterName = &"Skeleton"
+Height = 30.0
+FSMName = "Skeleton"
+Defaults = {
+"Life": 1,
+"MaxLife": 1,
+"WalkSpeed": 20
+}
+ArtOffset = Vector2(0, 0)
+ArtScale = 1.25
+CollisionLayer = 4
+Tags = Array[StringName]([])
+DefaultController = "AIController"

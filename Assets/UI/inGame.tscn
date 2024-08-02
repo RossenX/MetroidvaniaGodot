@@ -1,0 +1,317 @@
+[gd_scene load_steps=18 format=3 uid="uid://dvb0meefly77c"]
+
+[ext_resource type="Script" path="res://Assets/UI/Hearts Container.gd" id="1_ksssk"]
+[ext_resource type="Script" path="res://Assets/UI/inGame.gd" id="1_ugcv8"]
+[ext_resource type="PackedScene" uid="uid://dycwbeqd3k8yi" path="res://Assets/UI/heart.tscn" id="2_tikgd"]
+[ext_resource type="Texture2D" uid="uid://ds7hpmj6qpvie" path="res://Assets/Art/UI/tilemap_packed.png" id="4_iyxhr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yyp0b"]
+atlas = ExtResource("4_iyxhr")
+region = Rect2(0, 288, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hkrst"]
+atlas = ExtResource("4_iyxhr")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mydhg"]
+atlas = ExtResource("4_iyxhr")
+region = Rect2(128, 272, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ks42p"]
+atlas = ExtResource("4_iyxhr")
+region = Rect2(384, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yuxk0"]
+atlas = ExtResource("4_iyxhr")
+region = Rect2(400, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yn8gk"]
+atlas = ExtResource("4_iyxhr")
+region = Rect2(400, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_old7y"]
+atlas = ExtResource("4_iyxhr")
+region = Rect2(288, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f5h65"]
+atlas = ExtResource("4_iyxhr")
+region = Rect2(128, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t0kds"]
+atlas = ExtResource("4_iyxhr")
+region = Rect2(288, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_er3m7"]
+atlas = ExtResource("4_iyxhr")
+region = Rect2(304, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h88x6"]
+atlas = ExtResource("4_iyxhr")
+region = Rect2(320, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dp5wr"]
+atlas = ExtResource("4_iyxhr")
+region = Rect2(80, 304, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uytlk"]
+atlas = ExtResource("4_iyxhr")
+region = Rect2(512, 32, 32, 32)
+
+[node name="inGame-UI" type="CanvasLayer"]
+script = ExtResource("1_ugcv8")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 872.0
+offset_top = 512.0
+offset_right = 888.0
+offset_bottom = 528.0
+scale = Vector2(1.6181, 1.42656)
+texture = SubResource("AtlasTexture_yyp0b")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+offset_left = 872.0
+offset_top = 488.0
+offset_right = 888.0
+offset_bottom = 504.0
+scale = Vector2(1.6181, 1.42656)
+texture = SubResource("AtlasTexture_hkrst")
+
+[node name="TextureRect6" type="TextureRect" parent="."]
+offset_left = 872.0
+offset_top = 440.0
+offset_right = 888.0
+offset_bottom = 472.0
+scale = Vector2(1.6181, 1.42656)
+texture = SubResource("AtlasTexture_mydhg")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = 848.0
+offset_top = 488.0
+offset_right = 864.0
+offset_bottom = 505.0
+scale = Vector2(1.6181, 1.42656)
+texture = SubResource("AtlasTexture_ks42p")
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+offset_left = 848.0
+offset_top = 512.0
+offset_right = 864.0
+offset_bottom = 529.0
+scale = Vector2(1.6181, 1.42656)
+texture = SubResource("AtlasTexture_yuxk0")
+
+[node name="TextureRect5" type="TextureRect" parent="."]
+offset_left = 848.0
+offset_top = 464.0
+offset_right = 864.0
+offset_bottom = 481.0
+scale = Vector2(1.6181, 1.42656)
+texture = SubResource("AtlasTexture_yn8gk")
+
+[node name="TextureRect7" type="TextureRect" parent="."]
+offset_left = 792.0
+offset_top = 480.0
+offset_right = 808.0
+offset_bottom = 497.0
+scale = Vector2(1.6181, 1.42656)
+texture = SubResource("AtlasTexture_old7y")
+
+[node name="TextureRect11" type="TextureRect" parent="."]
+offset_left = 792.0
+offset_top = 456.0
+offset_right = 808.0
+offset_bottom = 473.0
+scale = Vector2(1.6181, 1.42656)
+texture = SubResource("AtlasTexture_f5h65")
+
+[node name="TextureRect8" type="TextureRect" parent="."]
+offset_left = 768.0
+offset_top = 504.0
+offset_right = 784.0
+offset_bottom = 521.0
+scale = Vector2(1.6181, 1.42656)
+texture = SubResource("AtlasTexture_t0kds")
+
+[node name="TextureRect9" type="TextureRect" parent="."]
+offset_left = 792.0
+offset_top = 504.0
+offset_right = 808.0
+offset_bottom = 521.0
+scale = Vector2(1.6181, 1.42656)
+texture = SubResource("AtlasTexture_er3m7")
+
+[node name="TextureRect10" type="TextureRect" parent="."]
+offset_left = 816.0
+offset_top = 504.0
+offset_right = 832.0
+offset_bottom = 521.0
+scale = Vector2(1.6181, 1.42656)
+texture = SubResource("AtlasTexture_h88x6")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 904.0
+offset_top = 488.0
+offset_right = 954.0
+offset_bottom = 511.0
+text = "Attack"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 904.0
+offset_top = 448.0
+offset_right = 954.0
+offset_bottom = 471.0
+text = "Dash
+"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 904.0
+offset_top = 512.0
+offset_right = 954.0
+offset_bottom = 535.0
+text = "Jump
+"
+
+[node name="Lower Left Corner" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+size_flags_horizontal = 4
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="Hearts Container" type="Node2D" parent="Lower Left Corner"]
+position = Vector2(16, -556)
+script = ExtResource("1_ksssk")
+
+[node name="Heart" parent="Lower Left Corner/Hearts Container" instance=ExtResource("2_tikgd")]
+
+[node name="Game Over" type="ColorRect" parent="."]
+visible = false
+offset_right = 960.0
+offset_bottom = 544.0
+color = Color(1, 1, 1, 0)
+
+[node name="Credits" type="Label" parent="Game Over"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 491.0
+offset_bottom = 528.0
+text = "Credits
+Programming: RossenX
+<Itch.IO Assets Artists>
+Art:
+Clembod - Protagonist
+raou - Tilemap
+bdragon1727 - UI
+kenney-assets - UI
+luizmelo - Boss
+finalgatestudios - Undead
+yggdrazzil - Skeleton
+Voice
+(Super Dialogue Audio Pack v1) Meghan Christian - Protagonist
+SFX:
+leohpaz
+VFX:
+jasontomlee
+Music:
+A Castlevania Tribute (2019) - Heart of Fire
+
+"
+
+[node name="Label" type="Label" parent="Game Over"]
+layout_mode = 0
+offset_left = 624.0
+offset_top = 224.0
+offset_right = 798.0
+offset_bottom = 311.0
+theme_override_font_sizes/font_size = 30
+text = "GAME OVER
+Retry?"
+horizontal_alignment = 1
+
+[node name="TextureRect3" type="TextureRect" parent="Game Over"]
+layout_mode = 0
+offset_left = 728.0
+offset_top = 312.0
+offset_right = 768.0
+offset_bottom = 352.0
+texture = SubResource("AtlasTexture_dp5wr")
+
+[node name="TextureRect4" type="TextureRect" parent="Game Over"]
+layout_mode = 0
+offset_left = 656.0
+offset_top = 312.0
+offset_right = 696.0
+offset_bottom = 352.0
+texture = SubResource("AtlasTexture_uytlk")
+
+[node name="Win" type="ColorRect" parent="."]
+offset_right = 960.0
+offset_bottom = 544.0
+color = Color(0, 0, 0, 0)
+
+[node name="Credits" type="Label" parent="Win"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 491.0
+offset_bottom = 528.0
+text = "Credits
+Programming: RossenX
+<Itch.IO Assets Artists>
+Art:
+Clembod - Protagonist
+raou - Tilemap
+bdragon1727 - UI
+kenney-assets - UI
+luizmelo - Boss
+finalgatestudios - Undead
+yggdrazzil - Skeleton
+Voice
+(Super Dialogue Audio Pack v1) Meghan Christian - Protagonist
+SFX:
+leohpaz
+VFX:
+jasontomlee
+Music:
+A Castlevania Tribute (2019) - Heart of Fire
+
+"
+
+[node name="Label" type="Label" parent="Win"]
+layout_mode = 0
+offset_left = 520.0
+offset_top = 24.0
+offset_right = 943.0
+offset_bottom = 111.0
+theme_override_font_sizes/font_size = 30
+text = "And so the evil alchemist and
+his minnions were destroyed"
+
+[node name="TextureRect" type="TextureRect" parent="Win"]
+layout_mode = 0
+offset_left = 728.0
+offset_top = 312.0
+offset_right = 768.0
+offset_bottom = 352.0
+texture = SubResource("AtlasTexture_dp5wr")
+
+[node name="TextureRect2" type="TextureRect" parent="Win"]
+layout_mode = 0
+offset_left = 656.0
+offset_top = 312.0
+offset_right = 696.0
+offset_bottom = 352.0
+texture = SubResource("AtlasTexture_uytlk")
+
+[node name="Label2Retry" type="Label" parent="Win"]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 264.0
+offset_right = 849.0
+offset_bottom = 312.0
+theme_override_font_sizes/font_size = 30
+text = "Hunger for more?"
